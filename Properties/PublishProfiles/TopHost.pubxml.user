@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAeC5mrwAjek2omrLYKeHpKQAAAAACAAAAAAAQZgAAAAEAACAAAADfwQYz4/gItKsfB56BHQcbMFoFqz1MIyb7/sGJgIBw3wAAAAAOgAAAAAIAACAAAAAB3LXhre1MmHb3zS3WOGWQ+vvpOWNY62kWthdt6JXEazAAAABb1xWgc+/Ck9iUCbAGlkv/Esq9+Ky284RS6sJlPUp7qhbWD5y3DcFlfkBQRT5f2jxAAAAATmsgV6FTw+oFUPLVCDmqtBewPoLyLHkX7GF/CHn4CFTwPX3T8eXElE/qG9fu/JA3V3dq00Yno/Q0pM4F69xyDA==</EncryptedPassword>
+    <_PublishTargetUrl>ftp://ftp.ptyxiouxos.net/httpdocs/draft2</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>03/04/2014 22:30:41</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>03/04/2014 22:30:41</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>03/17/2014 23:20:50</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>03/17/2014 23:20:50</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>03/04/2014 22:30:44</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>03/04/2014 22:30:44</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>03/04/2014 22:30:49</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>03/04/2014 22:30:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>03/04/2014 22:30:49</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>03/04/2014 22:30:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>03/04/2014 22:30:51</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>03/04/2014 22:30:51</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>03/04/2014 22:30:51</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
+      <publishTime>03/04/2014 22:30:51</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Google.dll">
+      <publishTime>03/04/2014 22:30:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.MicrosoftAccount.dll">
+      <publishTime>03/04/2014 22:30:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>03/04/2014 22:30:51</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Twitter.dll">
+      <publishTime>03/04/2014 22:30:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>03/04/2014 22:30:38</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>03/04/2014 22:30:40</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>03/04/2014 22:30:50</publishTime>
+    </File>
+    <File Include="bin/Ptyxiouxos2.dll">
+      <publishTime>03/17/2014 23:20:37</publishTime>
+    </File>
+    <File Include="bin/Ptyxiouxos2.pdb">
+      <publishTime>03/17/2014 23:20:37</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>03/04/2014 22:30:36</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>03/04/2014 22:30:38</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>03/04/2014 22:30:36</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>03/04/2014 22:30:35</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>03/04/2014 22:30:36</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>03/04/2014 22:30:36</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>03/04/2014 22:30:37</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>03/04/2014 22:30:42</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>03/04/2014 22:30:32</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>03/04/2014 22:30:32</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>03/04/2014 22:30:43</publishTime>
+    </File>
+    <File Include="Content/spinner/throbber.css">
+      <publishTime>03/04/2014 23:05:16</publishTime>
+    </File>
+    <File Include="Content/style.css">
+      <publishTime>03/11/2014 22:40:09</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>03/04/2014 22:30:28</publishTime>
+    </File>
+    <File Include="fonts/BEBAS___-webfont.eot">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="fonts/BEBAS___-webfont.ttf">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="fonts/BEBAS___-webfont.woff">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>03/04/2014 22:30:32</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>03/04/2014 22:30:32</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>03/04/2014 22:30:32</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>03/04/2014 22:30:32</publishTime>
+    </File>
+    <File Include="fonts/OpenSans-Regular-webfont.eot">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="fonts/OpenSans-Regular-webfont.ttf">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="fonts/OpenSans-Regular-webfont.woff">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/arrow.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/arrow1.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/arrow3.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/big-arrow.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/big-arrowr.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/big-arrowr1.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/big-arrowr2.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/big-social.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/btn-icon.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/btn-icon1.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/cam-icon.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/check-box.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/check-icon.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/comment-icon.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/comment-iconh.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/comment-people1.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/Copy of big-arrowr1.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/email.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/home-icon.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/home-iconh.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/icon_1.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/icon_2.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/icon_3.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/image-sprit.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/img1.jpg">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/img2.jpg">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/img3.jpg">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/line.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/nav-2-bg.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/nav-2-bg1.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/nav-icon.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/pagenate-icons.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/pagenate-iconsh.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/ptyx_chat.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/ptyx_logo.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/replay-right.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/replay.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/search-icon.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/search-iconh.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/slider-icon.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/slider1.jpg">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/slider2.jpg">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/slider3.jpg">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/slider4.jpg">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/small-arrow.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/social-icons.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/sub-btn.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/sub-btnh.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/tab-img1.jpg">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/tab-img2.jpg">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/tab-img3.jpg">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/text-icon.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/tootip.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/tootip1.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/twitter-icon.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/twitter-iconh.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/user-icon.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/videoicon.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/view-icon.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/view-iconh.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="images/x-icon.png">
+      <publishTime>03/04/2014 23:13:08</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>03/04/2014 22:30:53</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>03/17/2014 23:20:41</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>03/04/2014 22:30:32</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>03/04/2014 22:30:32</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>03/04/2014 22:30:32</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>03/04/2014 22:30:32</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>03/04/2014 22:30:32</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>03/04/2014 22:30:52</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>03/04/2014 22:30:52</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>03/04/2014 22:30:53</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>03/04/2014 22:30:53</publishTime>
+    </File>
+    <File Include="Scripts/login.js">
+      <publishTime>03/11/2014 00:07:14</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>03/04/2014 22:30:39</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>03/04/2014 22:30:42</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>03/04/2014 22:30:42</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>03/04/2014 23:02:42</publishTime>
+    </File>
+    <File Include="Views/Account/ExternalLoginConfirmation.cshtml">
+      <publishTime>03/04/2014 22:30:43</publishTime>
+    </File>
+    <File Include="Views/Account/ExternalLoginFailure.cshtml">
+      <publishTime>03/04/2014 22:30:43</publishTime>
+    </File>
+    <File Include="Views/Account/Login.cshtml">
+      <publishTime>03/11/2014 00:00:35</publishTime>
+    </File>
+    <File Include="Views/Account/Manage.cshtml">
+      <publishTime>03/13/2014 00:12:09</publishTime>
+    </File>
+    <File Include="Views/Account/Register.cshtml">
+      <publishTime>03/05/2014 21:29:00</publishTime>
+    </File>
+    <File Include="Views/Account/_ChangePasswordPartial.cshtml">
+      <publishTime>03/04/2014 22:30:43</publishTime>
+    </File>
+    <File Include="Views/Account/_ExternalLoginsListPartial.cshtml">
+      <publishTime>03/04/2014 22:30:43</publishTime>
+    </File>
+    <File Include="Views/Account/_RemoveAccountPartial.cshtml">
+      <publishTime>03/04/2014 22:30:43</publishTime>
+    </File>
+    <File Include="Views/Account/_SetPasswordPartial.cshtml">
+      <publishTime>03/04/2014 22:30:43</publishTime>
+    </File>
+    <File Include="Views/Home/About.cshtml">
+      <publishTime>03/04/2014 22:30:28</publishTime>
+    </File>
+    <File Include="Views/Home/Chat.cshtml">
+      <publishTime>03/04/2014 23:33:01</publishTime>
+    </File>
+    <File Include="Views/Home/Contact.cshtml">
+      <publishTime>03/04/2014 23:51:53</publishTime>
+    </File>
+    <File Include="Views/Home/getChatUsers.cshtml">
+      <publishTime>03/04/2014 23:43:08</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>03/04/2014 23:56:58</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>03/04/2014 22:30:43</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>03/15/2014 18:27:12</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout_originall.cshtml">
+      <publishTime>03/04/2014 22:30:43</publishTime>
+    </File>
+    <File Include="Views/Shared/_LoginPartial.cshtml">
+      <publishTime>03/15/2014 18:51:37</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>03/04/2014 22:30:28</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>03/04/2014 22:30:28</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/17/2014 23:19:15</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

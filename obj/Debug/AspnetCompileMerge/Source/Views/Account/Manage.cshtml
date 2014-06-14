@@ -1,0 +1,86 @@
+﻿@using Ptyxiouxos2.Models;
+@using Microsoft.AspNet.Identity;
+@model Ptyxiouxos2.Models.ManageUserViewModel
+
+@{
+    ViewBag.Title = "Διαχείριση Λογαριασμού";
+}
+
+@*<div class="row">
+    <div class="col-md-12">
+        @if (ViewBag.HasLocalPassword)
+        {
+            @Html.Partial("_ChangePasswordPartial")
+        }
+        else
+        {
+            @Html.Partial("_SetPasswordPartial")
+        }
+
+        <section id="externalLogins">
+            @Html.Action("RemoveAccountList")
+            @Html.Partial("_ExternalLoginsListPartial", new { Action = "LinkLogin", ReturnUrl = ViewBag.ReturnUrl })
+        </section>
+    </div>
+</div>*@
+
+<div class="register-form">
+    <h2><span> </span>Διαχείριση Λογαριασμού - @User.Identity.GetUserName()</h2>
+    @using (Html.BeginForm("Manage", "Account", FormMethod.Post, new { role = "form" }))
+    {
+        @Html.AntiForgeryToken()
+        <p class="text-success">@ViewBag.StatusMessage</p>
+        <div>
+            @Html.ValidationSummary()
+        </div>
+        
+        
+        @Html.LabelFor(m => m.FirstName)
+		<div class="text-box">
+            @{ var fn = Html.DisplayNameFor(m => m.FirstName); }
+            @Html.TextBoxFor(m => m.FirstName, new { id = "firstName", placeholder = fn })
+            <span>@Html.ValidationMessageFor(m => m.FirstName)</span>
+		</div>
+        
+        @Html.LabelFor(m => m.LastName)
+		<div class="text-box">
+            @{ var ln = Html.DisplayNameFor(m => m.LastName); }
+            @Html.TextBoxFor(m => m.LastName, new { id = "lastName", placeholder = ln })
+            <span>@Html.ValidationMessageFor(m => m.LastName)</span>
+		</div>
+        
+        @Html.LabelFor(m => m.Email)
+		<div class="text-box">
+            @{ var em = Html.DisplayNameFor(m => m.Email); }
+            @Html.TextBoxFor(m => m.Email, new { id = "lastName", placeholder = em })
+            <span>@Html.ValidationMessageFor(m => m.Email)</span>
+		</div>
+
+        @Html.LabelFor(m => m.OldPassword)
+		<div class="text-box">
+            @Html.PasswordFor(m => m.OldPassword )
+            <span>@Html.ValidationMessageFor(m => m.OldPassword)</span>
+		</div>
+
+        @Html.LabelFor(m => m.NewPassword)
+		<div class="text-box">
+            @Html.PasswordFor(m => m.NewPassword)
+            <span>@Html.ValidationMessageFor(m => m.NewPassword)</span>
+		</div>
+
+        @Html.LabelFor(m => m.ConfirmPassword)
+		<div class="text-box">
+            @Html.PasswordFor(m => m.ConfirmPassword)
+            <span>@Html.ValidationMessageFor(m => m.ConfirmPassword)</span>
+		</div>
+        
+        <input type="submit" value="Αποθήκευση" class="btn btn-default" />
+        @Html.ActionLink("Ακύρωση", "Index", "Home", null, new { @class = "org" }) 
+    }
+</div>
+
+
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }

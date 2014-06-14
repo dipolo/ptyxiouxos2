@@ -1,0 +1,66 @@
+﻿@using Microsoft.AspNet.Identity
+
+@{
+    ViewBag.ReturnUrl = Model.ReturnUrl;
+}
+<div class="login_box">
+    <div id="loginContainer">
+        @if (Request.IsAuthenticated)
+{
+    <span style="position: relative; bottom: 10px; font-size: 12px; ">@User.Identity.GetUserName()</span>
+}
+        <a id="loginButton" class="">
+            <span></span>
+        </a>
+        <div id="loginBox" style="display: none;">
+
+            @if (Request.IsAuthenticated)
+            {
+                using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { role = "form", @class = "loginForm" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <div>
+                        <div class="form-row">
+                            Καλώς Ήρθες, @User.Identity.GetUserName()
+                        </div>
+                        <div class="form-row">
+                            @Html.ActionLink("Λογαριασμός", "Manage", "Account", routeValues: null, htmlAttributes: new { title = "Διαχείριση λογαριασμού", @class = "org" })
+                            <input type="submit" value="Αποσυνδεση">
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form", @class = "loginForm" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="text-box">
+                            @Html.TextBox("UserName", null, htmlAttributes: new { id = "UserName", placeholder = "Όνομα χρήστη" })
+                    </div>
+                    <div class="text-box">
+                        @Html.Password("Password", null, new { id = "Password", placeholder = "Κωδικός" })
+                    </div>
+
+                    <div class="checkbox-grid-left">
+                        <p>
+                            Να με θυμάσαι
+                            @Html.CheckBox("RememberMe", false, new {id="RememberMe", @class="css-checkbox12" })
+                            @Html.Label("RememberMe", " ", new { @class = "css-label12" })
+                        </p>
+                    </div>
+                    <input type="submit" value="Σύνδεση">
+                     <a href="">Επαναφορά κωδικού</a>
+                    <input class="org" type="button" value="Εγγραφη χρηστη">
+                }
+            }
+
+
+
+
+
+
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>

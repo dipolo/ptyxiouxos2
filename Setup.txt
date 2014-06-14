@@ -1,0 +1,16 @@
+﻿1. Φάκελος /Games: Εδώ βάζουμε τον φάκελο του παιχνιδιού(πχ Tangram, Bit2 κτλ).
+2. Φάκελος /Controllers: Μέσα στο GamesController.cs φτιάχνουμε μία μέθοδο όμοια με του Tangram(πχ Bit2). Αφού φτιάξουμε την μέθοδο
+κάνουμε δεξί-κλικ πάνω στο όνομά της και Add View -> δίνουμε το όνομα του View(πχ Βιτ2)
+3. Φάκελος /Views/Games: Εδώ βρίσκουμε την view που φτιάξαμε στο παραπάνω βήμα(πχ Bit2.cshtml). Κάνουμε copy paste τον κώδικα από το 
+Tangram.cshtml και αλλάζουμε τις ονομασίες όπου χρειάζεται.
+4. Φάκελος /Views/Home: Ανοίγουμε την Index.cshtml και αλλάζουμε την διαδρομή να δείχνει στην view που φτιάξαμε(πχ ~/Games/Bit2/0).
+
+5. Για να τρέξει η Unity στον IIS Express πρέπει να προσθέσουμε μέσα στο αρχείο:
+	
+		Τα έγγραφά μου\IISExpress\config\applicationhost.config 
+	
+	μέσα στο κομμάτι  <staticContent>...</staticContent> στο τέλος την εξής γραμμή:
+
+            <mimeMap fileExtension=".unity3d" mimeType="application/unity3d" />
+
+Σταυρώνουμε τα δάχτυλα, κάνουμε 10 μετάνοιες, ανάβουμε κερί στον Bill Gates και ελπίζουμε να δουλέψει
