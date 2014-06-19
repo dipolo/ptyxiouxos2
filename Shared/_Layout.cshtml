@@ -1,0 +1,96 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @*<title>@ViewBag.Title</title>*@
+    <link href="@Href("/Content/spinner/throbber.css")" rel="stylesheet" type="text/css" />
+    <link href="@Href("/Content/style.css")" rel="stylesheet"/>
+    <script src="@Href("/Scripts/jquery-1.10.2.js")"></script>
+
+    
+    <script src="@Href("/Scripts/login.js")"></script>
+
+    <script src="@Href("/Scripts/modernizr-2.6.2.js")"></script>
+
+</head>
+
+<body>
+    <!---strat-wrap---->
+    <div class="wrap">
+
+        <div class="top-nav">
+            <div class="menu1">
+                <ul class="menu2">
+                    <li>
+                        <a class="nav-icon" href=""></a>
+                       <ul>
+                            <li>
+                                <a class="root-nav1" href="@Href("~/")">Αρχη</a>
+                            </li>
+                            <li>
+                                <a class="root-nav2" href="@Href("~/")">Παιχνίδια</a>
+                            </li>
+                            <li>
+                                <a class="root-nav3" href="@Href("~/")">Συνομιλια</a>
+                            </li>
+                            <li>
+                                <a class="root-nav4" href="@Href("~/")">Επικοινωνια</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="top-nav_right">
+                <div class="menu">
+                    <!-- start top-nav-->
+                    <div class="cssmenu">
+                        <ul>
+                            <li>
+                                <a  href="@Href("~/")">Αρχη</a>                            
+                            </li>
+
+                            <li class="has-sub">
+                                <a  href="@Href("~/")">
+                                    <span>Παιχνιδια</span>
+                                </a>
+
+                            </li>
+
+                            <li>
+                                <a  href="@Href("~/")">Συνομιλια</a>
+                            </li>
+
+                            <li class="last">
+                                <a  href="@Href("~/")">Επικοινωνια</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <!-- start login_box -->
+
+            <div class="clear"></div>
+        </div>
+
+
+        @RenderBody()
+
+
+    </div>
+    <!---//End-wrap---->
+
+
+    @RenderSection("scripts", required: false)
+
+
+
+
+
+
+</body>
+
+</html>
