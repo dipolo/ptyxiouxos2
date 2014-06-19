@@ -74,6 +74,54 @@
     background-image: url('../images/tangram_icon_hd.png');
 }
 
+.tile.edurun {
+    background-image: url('../images/edurun.png');
+}
+
+.tile.tiletap {
+    background-image: url('../images/tiletap.png');
+}
+
+.tile.leksidromies {
+    background-image: url('../images/leksidromies.png');
+}
+
+.tile.arithmopuzzle {
+    background-image: url('../images/arithmopuzzle.png');
+}
+
+.tile.fouska {
+    background-image: url('../images/fouska.png');
+}
+
+.tile.arithmofidaki {
+    background-image: url('../images/arithmofidaki.png');
+}
+
+.tile.symmetria {
+    background-image: url('../images/symmetria.png');
+}
+
+.tile.kalathi {
+    background-image: url('../images/kalathi.png');
+}
+
+.tile.mouseio {
+    background-image: url('../images/mouseio.png');
+}
+
+.tile.asteroid {
+    background-image: url('../images/asteroid.png');
+}
+
+.tile.grammatoeisboleis {
+    background-image: url('../images/grammatoeisboleis.png');
+}
+
+.tile.bit {
+    background-image: url('../images/bit.png');
+}
+
 .tile .subtitle .chat_users {
     font-size: 10px;
     color: #e6e6e6;
