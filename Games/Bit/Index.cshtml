@@ -2,13 +2,8 @@
     Page.Title = "Bit - Παιχνίδια - Πτυχιούχος";
 }
 
-<script type="text/javascript">
-    var unityObjectUrl = "@Href("~/Games/Bit")/UnityObject.js";
-    if (document.location.protocol == 'https:')
-        unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
-    document.write('<script type="text\/javascript" src="' + unityObjectUrl + '"><\/script>');
-</script>
-
+@section UnityScript {
+    <script type="text/javascript" src="@Href("/Scripts")/UnityObject2.js"></script>}
 
 <script type="text/javascript">
     var config = {

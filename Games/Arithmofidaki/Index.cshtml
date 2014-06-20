@@ -2,13 +2,9 @@
     Page.Title = "Αριθμοφιδάκι - Παιχνίδια - Πτυχιούχος";
 }
 
-<script type="text/javascript">
-    var unityObjectUrl = "@Href("~/Games/Arithmofidaki")/UnityObject2.js";
-    if (document.location.protocol == 'https:')
-        unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
-    document.write('<script type="text\/javascript" src="' + unityObjectUrl + '"><\/script>');
-</script>
 
+@section UnityScript {
+    <script type="text/javascript" src="@Href("/Scripts")/UnityObject2.js"></script>}
 
 <script type="text/javascript">
     var config = {
@@ -54,7 +50,7 @@
                     break;
             }
         });
-        u.initPlugin(jQuery("#unityPlayer")[0], "@Href("~/Games/Tiletap")/Web.unity3d");
+        u.initPlugin(jQuery("#unityPlayer")[0], "@Href("~/Games/Arithmofidaki")/Web.unity3d");
     });
 </script>
 

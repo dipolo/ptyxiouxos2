@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    @*<title>@ViewBag.Title</title>*@
+    <title>@Page.Title</title>
     <link href="@Href("/Content/spinner/throbber.css")" rel="stylesheet" type="text/css" />
     <link href="@Href("/Content/style.css")" rel="stylesheet"/>
     <script src="@Href("/Scripts/jquery-1.10.2.js")"></script>
@@ -14,6 +14,7 @@
     <script src="@Href("/Scripts/login.js")"></script>
 
     <script src="@Href("/Scripts/modernizr-2.6.2.js")"></script>
+    @RenderSection("UnityScript", required: false)
 
 </head>
 
@@ -56,7 +57,13 @@
                                 <a  href="@Href("~/")">
                                     <span>Παιχνιδια</span>
                                 </a>
-
+					   	        @*<ul>
+					                 <li class="has-sub"><a href="@Href("~/Games/Arithmofidaki/Index")"><span>Αριθμοσκουληκακι</span></a></li>
+					                 <li class="has-sub"><a href="@Href("~/Games/Arithmopuzzle/Index")"><span>Αριθμοπαζλ</span></a></li>
+					                 <li class="has-sub"><a href="#"><span>Lorem Ipsum</span></a></li>
+					                 <li class="has-sub"><a href="#"><span>Lorem Ipsum</span></a></li>
+					                 <li class="has-sub"><a href="#"><span>Lorem Ipsum</span></a></li>
+					              </ul>*@
                             </li>
 
                             <li>
