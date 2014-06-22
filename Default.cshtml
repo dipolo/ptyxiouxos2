@@ -1,6 +1,29 @@
 ﻿@{
-    //ViewBag.Title = "Πτυχιούχος 2.0";
+    Page.Title = "Πτυχιούχος 2.0";
 }
+
+
+@*
+<div style="position: absolute;z-index: 1;top: 300px">
+    <canvas id="myCanvas" width="1000" height="300"></canvas>
+        <script>
+            var canvas = document.getElementById('myCanvas');
+            var context = canvas.getContext('2d');
+            context.font = 'italic 100pt Calibri';
+            context.fillStyle = '#2c2664';
+            context.fillText('Πτυχιούχος 2.0', 100, 100);
+            context.fillText('έρχεται...', 100, 250);
+        </script>
+</div>
+
+<div style="z-index: -1">
+    <video  autoplay="autoplay" title="Ptyxiouxos" loop="loop" width="100%" height="auto">
+    <source src="../images/banner.webm" type="video/webm" />
+    </video>
+</div>
+    
+
+
 
 <div class="grids-slider-grid-row2">
     <a class="tile chat" href="@Href("~/")">
@@ -67,6 +90,16 @@
 </div>
 
 <div class="grids-slider-grid-row2">
+    <a class="tile monopati" href="@Href("~/Games/Monopati/Index")">
+    </a>
+</div>
+
+<div class="grids-slider-grid-row2">
+    <a class="tile dasos" href="@Href("~/Games/Dasos/Index")">
+    </a>
+</div>
+
+<div class="grids-slider-grid-row2">
     <a class="tile arithmopuzzle" href="@Href("~/Games/Arithmopuzzle/Index")">
     </a>
 </div>
@@ -74,4 +107,165 @@
 <div class="grids-slider-grid-row2">
     <a class="tile bit" href="@Href("~/Games/Bit/Index")">
     </a>
+</div>*@
+
+
+<div id="Container">
+    
+    <div class="controls">
+      <label>Ηλικία:</label>
+  
+      <button class="filter" data-filter="all">Όλες</button>
+      <button class="filter" data-filter=".age-1">3 - 6</button>
+      <button class="filter" data-filter=".age-2">7 - 9</button>
+      <button class="filter" data-filter=".age-3">9 - 12</button>
+  
+      @*<label>Sort:</label>
+  
+      <button class="sort" data-sort="myorder:asc">Asc</button>
+      <button class="sort" data-sort="myorder:desc">Desc</button>*@
+
+    </div>
+
+	<div class="mix age-2 age-3" data-myorder="2">
+        <div class="grids-slider-grid-row2">
+            <a class="tile chat" href="@Href("~/")">
+                <div class="title">
+                    Συνομιλία
+                </div>
+                <div class="clear"></div>
+            </a>
+        </div>
+    </div>
+	
+    <div class="mix age-1" data-myorder="4">
+        <div class="grids-slider-grid-row2">
+            <a class="tile tangram" href="@Href("~/Games/Tangram/Index")">
+            </a>
+        </div>
+    </div>
+	
+    <div class="mix age-3" data-myorder="1">
+        <div class="grids-slider-grid-row2">
+            <a class="tile edurun" href="@Href("~/Games/Edurun/Index")">
+            </a>
+        </div>
+    </div>
+	
+    <div class="mix age-1" data-myorder="8">
+        <div class="grids-slider-grid-row2">
+            <a class="tile tiletap" href="@Href("~/Games/Tiletap/Index")">
+            </a>
+        </div>
+    </div>
+	
+    <div class="mix age-2" data-myorder="8">
+        <div class="grids-slider-grid-row2">
+            <a class="tile arithmofidaki" href="@Href("~/Games/Arithmofidaki/Index")">
+            </a>
+        </div>
+    </div>
+    	
+    <div class="mix age-2" data-myorder="8">
+        <div class="grids-slider-grid-row2">
+            <a class="tile leksidromies" href="@Href("~/Games/Leksidromies/Index")">
+            </a>
+        </div>
+    </div>
+
+    <div class="mix age-3" data-myorder="8">
+        <div class="grids-slider-grid-row2">
+           <a class="tile mouseio" href="@Href("~/Games/Mouseio/Index")">
+            </a>
+        </div>
+    </div>
+
+    <div class="mix age-2" data-myorder="8">
+        <div class="grids-slider-grid-row2">
+            <a class="tile symmetria" href="@Href("~/Games/Symmetria/Index")">
+            </a>
+        </div>
+    </div>
+ 
+
+    <div class="mix age-2" data-myorder="8">
+        <div class="grids-slider-grid-row2">
+            <a class="tile kalathi" href="@Href("~/Games/Kalathi/Index")">
+            </a>
+        </div>
+    </div>
+
+   <div class="mix age-1" data-myorder="8">
+        <div class="grids-slider-grid-row2">
+            <a class="tile asteroid" href="@Href("~/Games/Asteroid/Index")">
+            </a>
+        </div>
+    </div>
+
+   <div class="mix age-2" data-myorder="8">
+        <div class="grids-slider-grid-row2">
+            <a class="tile fouska" href="@Href("~/Games/Fouska/Index")">
+            </a>
+        </div>
+    </div>
+ 
+   <div class="mix age-2" data-myorder="8">
+        <div class="grids-slider-grid-row2">
+            <a class="tile grammatoeisboleis" href="@Href("~/Games/Grammatoeisboleis/Index")">
+            </a>
+        </div>
+    </div>
+ 
+   <div class="mix age-3" data-myorder="8">
+        <div class="grids-slider-grid-row2">
+            <a class="tile monopati" href="@Href("~/Games/Monopati/Index")">
+            </a>
+        </div>
+    </div>
+ 
+   <div class="mix age-3" data-myorder="8">
+        <div class="grids-slider-grid-row2">
+            <a class="tile dasos" href="@Href("~/Games/Dasos/Index")">
+            </a>
+        </div>
+    </div>
+ 
+   <div class="mix age-2" data-myorder="8">
+        <div class="grids-slider-grid-row2">
+            <a class="tile arithmopuzzle" href="@Href("~/Games/Arithmopuzzle/Index")">
+            </a>
+        </div>
+    </div>
+ 
+   <div class="mix age-3" data-myorder="8">
+        <div class="grids-slider-grid-row2">
+            <a class="tile bit" href="@Href("~/Games/Bit/Index")">
+            </a>
+        </div>
+    </div>
+
 </div>
+
+
+@section scripts {
+
+		<script src="@Href("/Scripts/jquery.mixitup.min.js")"></script>
+
+		<script type="text/javascript">
+
+            $(function(){
+
+	            // Instantiate MixItUp:
+                $('#Container').mixItUp({
+	                animation: {
+		                duration: 500,
+		                effects: 'fade translateZ(-360px) stagger(50ms)',
+		                easing: 'cubic-bezier(0.175, 0.885, 0.32, 1.275)'
+	                }
+                });
+
+            });
+
+        </script>
+
+}

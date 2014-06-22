@@ -1,5 +1,49 @@
 @import url(http://fonts.googleapis.com/css?family=Press+Start+2P&subset=latin,greek);
 
+#Container .mix{
+	display: none;
+}
+
+.controls{
+  /*padding: 2%;
+  background: #333;*/
+  color: #eee;
+  text-align: right;
+
+}
+
+
+.controls label{
+  font-weight: 300;
+  margin: 0 .4em 0 0;
+  font-size: 12px; 
+}
+
+.controls button{
+  display: inline-block;
+  padding: .4em .8em;
+  background: #666;
+  border: 0;
+  color: #ddd;
+  font-size: 12px;
+  font-weight: 300;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.controls button.active{
+  background: #68b8c4;
+}
+
+
+.controls button:focus{
+  outline: 0 none;
+}
+
+.controls button + label{
+  margin-left: 1em;
+}
+
 
 .form-row {
     margin: 15px 0px 15px 0px;
@@ -116,6 +160,14 @@
 
 .tile.grammatoeisboleis {
     background-image: url('../images/grammatoeisboleis.png');
+}
+
+.tile.monopati {
+    background-image: url('../images/monopati.png');
+}
+
+.tile.dasos {
+    background-image: url('../images/dasos.png');
 }
 
 .tile.bit {

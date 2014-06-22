@@ -11,9 +11,9 @@
     <script src="@Href("/Scripts/jquery-1.10.2.js")"></script>
 
     
-    <script src="@Href("/Scripts/login.js")"></script>
+    @*<script src="@Href("/Scripts/login.js")"></script>
 
-    <script src="@Href("/Scripts/modernizr-2.6.2.js")"></script>
+    <script src="@Href("/Scripts/modernizr-2.6.2.js")"></script>*@
     @RenderSection("UnityScript", required: false)
 
 </head>
@@ -21,6 +21,8 @@
 <body>
     <!---strat-wrap---->
     <div class="wrap">
+       
+        @RenderSection("header", required: false)
 
         <div class="top-nav">
             <div class="menu1">
