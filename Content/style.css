@@ -58,8 +58,8 @@
 	margin-left: 1em;
 	margin-top: 1em;
 */
-    width:200px;
-    height:200px;
+    width:150px;
+    height:150px;
     background-color: #35B5EB;
     background-repeat: no-repeat;
     background-position: center center;
@@ -76,6 +76,7 @@
     float:left;
     text-decoration: none;
     position: relative;
+    border-radius: 8px;
 }
 
 .tile .title {
@@ -105,8 +106,8 @@
 
 .tile.chat {
     background-image: url('../images/ptyx_chat.png');
-    width:180px;
-    height:180px;
+    width:130px;
+    height:130px;
     background-color: #35B5EB;
     background-size: 50% 50%;
 	padding: 10px 10px;

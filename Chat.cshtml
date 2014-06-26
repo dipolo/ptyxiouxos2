@@ -1,0 +1,28 @@
+﻿@{
+    Page.Title = "Συνομιλία - Πτυχιούχος 2.0";
+}
+
+	<div class="chat-login-form">
+        <div class="chat-icon" id="chatIcon">
+            <div style="position: relative; bottom: -150px;">Είσοδος</div>
+        </div>
+        <div class="chat-user-data">
+            <div class="chat-user-name">
+                <input id="userName" type="text" placeholder="Όνομα"/>
+                <span class="submit"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="firechat-wrapper"></div>
+
+@section scripts {
+
+    <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+    <script src="https://cdn.firebase.com/v0/firebase-simple-login.js"></script>
+
+    <link rel="stylesheet" href="@Href("~/FireChat/firechat-default.css")" />
+    <link rel="stylesheet" href="@Href("~/Content/Chat.css")" />
+    <script src="@Href("~/FireChat/firechat-default.js")"></script>
+    <script src="@Href("~/Scripts/Chat.js")"></script>
+}
