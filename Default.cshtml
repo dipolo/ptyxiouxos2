@@ -133,6 +133,8 @@
                 <div class="title">
                     Συνομιλία
                 </div>
+                <div id="numUsersOnline" class="loading"></div>
+                <div id="usersOnline" class="subtitle"></div>
                 <div class="clear"></div>
             </a>
         </div>
@@ -250,21 +252,46 @@
 @section scripts {
 
 		<script src="@Href("/Scripts/jquery.mixitup.min.js")"></script>
+        <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.17/firebase.js'></script>
 
 		<script type="text/javascript">
 
-            $(function(){
+      $(function () {
 
-	            // Instantiate MixItUp:
-                $('#Container').mixItUp({
-	                animation: {
-		                duration: 500,
-		                effects: 'fade translateZ(-360px) stagger(50ms)',
-		                easing: 'cubic-bezier(0.175, 0.885, 0.32, 1.275)'
-	                }
-                });
+          // Instantiate MixItUp:
+          $('#Container').mixItUp({
+              animation: {
+                  duration: 500,
+                  effects: 'fade translateZ(-360px) stagger(50ms)',
+                  easing: 'cubic-bezier(0.175, 0.885, 0.32, 1.275)'
+              }
+          });
 
-            });
+          var strUsers = "";
+          var numUsers = 0;
+          var strUsersFinal;
+          var chatRef = new Firebase('https://ptyxiouxos-chat.firebaseio.com/user-names-online');
+          chatRef.once('value', function (snapshot) {
+              if (snapshot.val() != null) {
+                  console.log(snapshot.val());
+                  snapshot.forEach(function (childSnapshot) {
+                      console.log(childSnapshot.name());
+                      if (numUsers == 0)
+                          strUsers = childSnapshot.name();
+                      else
+                          strUsers += ", " + childSnapshot.name();
+                      numUsers++;
+                  });
+                  $("#numUsersOnline").remove();
+                  //strUsers = "giannhs, marios, λιοντάρι, giannhs, marios, λιοντάρι, giannhs, marios, λιοντάρι, giannhs, marios, λιοντάρι, giannhs, marios, λιοντάρι, giannhs, marios, λιοντάρι, giannhs, marios, λιοντάρι, giannhs, marios, λιοντάρι, giannhs, marios, λιοντάρι, giannhs, marios, λιοντάρι"
+                  strUsersFinal = strUsers.substr(0, 35);
+                  if (strUsers.length > 35)
+                      strUsersFinal += "...";
+                  $("#usersOnline").html(strUsersFinal);
+                  $("#usersOnline").attr("title", strUsers);
+              }
+          });
+      });
 
         </script>
 

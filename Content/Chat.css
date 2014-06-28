@@ -23,12 +23,17 @@
     position: relative;
 }
 
-.chat-login-form input[type=text] {
+.chat-login-form input[type=text], input[type=password] {
 	border:1px solid rgba(0,0,0,0);
 	padding:1px;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
     width: 115px; 
-    background-color:transparent;   
+    background-color:transparent; 
+    font-size: 12px;  
+}
+
+.chat-login-form input[type=password] {
+    display: none;
 }
 
 .chat-icon {
@@ -59,7 +64,8 @@
 	border:1px solid rgba(0,0,0,0);
     width: 100%;
     background-color:#fff;   
-	padding:2px;    
+	padding:2px; 
+    text-align:left; 
 }
 
 .chat-user-name .submit {

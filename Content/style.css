@@ -89,10 +89,26 @@
 .tile .subtitle {
     width: 90%;
     text-align: center;
-    font-size: 14px;
+    font-size: 10px;
     position: absolute;
     bottom: 5px;
 }
+.tile .loading {
+	/*position:relative;
+	top:3px;
+	right:2px;*/
+    position: absolute;
+    bottom: 60px;
+    width: 90%;
+	height:24px;
+	text-align: center;
+	border:none;
+	padding:0;
+    background: url('../images/ajax-loader.gif') center no-repeat;
+    font-size: 14px;
+    color: black;
+}
+
 .tile:hover{
 	zoom: 1;
 	filter: alpha(opacity=50);
