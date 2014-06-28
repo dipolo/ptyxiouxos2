@@ -899,6 +899,7 @@
   font-family: Arial;
   font-weight: bold;
   overflow: hidden;
+  position: static;
 }
 #firechat .icon.plus {
   margin-top: 0;
@@ -925,6 +926,11 @@
   width: 17px;
   height: 13px;
 }
+#firechat .icon.power-off {
+  background-image: url(../images/power-off.png);
+  width: 17px;
+  height: 13px;
+}
 #firechat .icon.user-mute {
   background-position: -84px 0;
   width: 13px;
@@ -941,4 +947,8 @@
 }
 #firechat a > .icon {
   margin: 3px 1px;
+}
+
+#firechat .clearfix ul li a span {
+    background: none;
 }

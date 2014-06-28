@@ -1,0 +1,33 @@
+{
+  "moderators" : [ null, true, true ],
+  "room-metadata" : {
+    "-JQ9asTxA9xl10tUTq6d" : {
+      "type" : "public",
+      "name" : "Γενική Συζήτηση",
+      "createdByUserId" : "-JQ9TwNkgs-GflUSRp5K",
+      "createdAt" : 1403558529154,
+      "id" : "-JQ9asTxA9xl10tUTq6d"
+    },
+    "-JQ9bGC9o8VoRcaXFeJS" : {
+      "type" : "public",
+      "name" : "Λύκειο",
+      "createdByUserId" : "-JQ9TwNkgs-GflUSRp5K",
+      "createdAt" : 1403558630397,
+      "id" : "-JQ9bGC9o8VoRcaXFeJS"
+    },
+    "-JQ9bBoz0pTcuUldS0xF" : {
+      "type" : "public",
+      "name" : "Δημοτικό",
+      "createdByUserId" : "-JQ9TwNkgs-GflUSRp5K",
+      "createdAt" : 1403558612467,
+      "id" : "-JQ9bBoz0pTcuUldS0xF"
+    },
+    "-JQ9bEN6_UTkmIu6fxxn" : {
+      "type" : "public",
+      "name" : "Γυμνάσιο",
+      "createdByUserId" : "-JQ9TwNkgs-GflUSRp5K",
+      "createdAt" : 1403558622908,
+      "id" : "-JQ9bEN6_UTkmIu6fxxn"
+    }
+  }
+}
