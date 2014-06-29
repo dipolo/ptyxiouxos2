@@ -131,6 +131,11 @@
     margin-right: 10px;
 }
 
+
+.tile.blab {
+    background-image: url('../images/blab.png');
+}
+
 .tile.tangram {
     background-image: url('../images/tangram_icon_hd.png');
 }
